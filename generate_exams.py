@@ -413,7 +413,7 @@ letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 def main():
     parser = argparse.ArgumentParser(description="Generate Randomized Exam PDFs from Canvas QTI Exports.")
     parser.add_argument("zip_file", help="Path to the input Canvas QTI .zip file")
-    parser.add_argument("--title", default="ME 5365 Final Exam, Spring 2026", help="Exam Title")
+    parser.add_argument("--title", default="Exam", help="Exam Title")
     parser.add_argument("--num-exams", type=int, default=1, help="Number of randomized exams to generate")
     
     parser.add_argument("--calc-allowed", action="store_true", help="Allow calculators (Default: False)")
