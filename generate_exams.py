@@ -261,7 +261,10 @@ letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
     <meta charset="utf-8">
     <title>${title}</title>
     <style>
-      @page { margin: 0.5in; }
+      @page {
+        size: letter;
+        margin: 0.5in;
+      }
       
       body { 
           font-family: "Times New Roman", Times, serif; 
@@ -326,7 +329,7 @@ letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
   </head>
   <body>
     <div class="header-name">
-        Name:_______________________________________________________
+        Name:_______________________________
     </div>
             
     <div class="title-page">
@@ -348,7 +351,7 @@ letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
     % endif
     
     <div class="header-name">
-        Name:_______________________________________________________
+        Name:_______________________________
     </div>
     
     <ol>
@@ -357,7 +360,6 @@ letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
         % if question.type == "essay":
             <li>
                 <div class="question-text">${question.text | n}</div>
-                <br><br><br><br>
             </li>
             
         % elif question.type == "multiple_choice":
